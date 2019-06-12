@@ -1,4 +1,4 @@
-package app
+package org.jooby
 
 import org.jooby.Jooby
 import org.jooby.Route
