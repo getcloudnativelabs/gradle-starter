@@ -1,7 +1,7 @@
-package starter.gradle
+package app
 
 import org.jooby.Jooby
-import static starter.gradle.JoobyExtension.*
+import static app.JoobyExtension.*
 
 /**
  * Hello world gradle project.

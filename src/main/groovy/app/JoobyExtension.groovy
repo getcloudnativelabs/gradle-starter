@@ -1,4 +1,4 @@
-package starter.gradle
+package app
 
 import org.jooby.Jooby
 import org.jooby.Route
