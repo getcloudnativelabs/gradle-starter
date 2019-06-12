@@ -38,6 +38,9 @@ dependencyManagement {
 }
 
 dependencies {
+  compile "io.github.openfeign:feign-core:9.3.1"
+  compile "io.github.openfeign:feign-gson:9.4.0"
+  compile "org.apache.httpcomponents:httpclient:4.5.8"
   compile "org.codehaus.groovy:groovy-all:2.5.7"
   compile "org.jooby:jooby-netty"
 
