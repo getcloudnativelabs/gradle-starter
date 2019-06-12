@@ -19,6 +19,7 @@ apply plugin: "io.spring.dependency-management"
 apply plugin: "com.google.osdetector"
 apply plugin: "application"
 apply plugin: "jooby"
+apply plugin: "groovy"
 
 group "starter.gradle"
 version "1.0"
@@ -37,7 +38,9 @@ dependencyManagement {
 }
 
 dependencies {
+  compile "org.codehaus.groovy:groovy-all:2.5.7"
   compile "org.jooby:jooby-netty"
+
   compile "io.netty:netty-transport-native-epoll:${dependencyManagement.importedProperties['netty.version']}:${osdetector.classifier.contains('linux') ? 'linux-x86_64' : ''}"
   compile "io.netty:netty-tcnative-boringssl-static:${dependencyManagement.importedProperties['boringssl.version']}" 
 
